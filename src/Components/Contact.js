@@ -4,10 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 export const Contact = () => {
   const navigate = useNavigate();
-  const {
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
+  const { handleSubmit } = useForm();
 
   const onSubmit = (data) => {
     console.log(data);
