@@ -4,6 +4,7 @@ import vista from "../images/vroomvista.png";
 import uh from "../images/uh-page.png";
 import linear from "../images/gradient.png";
 import books from "../images/virtual-care-screen.png";
+import { Link } from "react-router-dom";
 
 export const Projects = () => {
   return (
@@ -13,100 +14,97 @@ export const Projects = () => {
         <div className="card">
           <img src={safari} alt="" />
           <p>
-            Safari Quest: A food and travel destination where captivating
-            stories, stunning visuals, and delightful recipes take you on a
-            global culinary journey. Explore diverse cultures and savor the
-            universal language of food with every bite.
+            <span style={{ fontWeight: "bold" }}>Safari Quest:</span>{" "}
+            Captivating stories, stunning visuals, and delightful recipes take
+            you on a global culinary journey. Explore diverse cultures and savor
+            the universal language of food .
           </p>
-          <button>
-            <a
-              href="https://safariquest-adventure.netlify.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Live Demo
-            </a>
-          </button>
+
+          <Link
+            to="https://safariquest-adventure.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            <button> Live Demo</button>
+          </Link>
         </div>
 
         <div className="card">
           <img src={books} alt="" />
           <p>
-            Virtual Care: Designed to facilitate online consultations with
-            healthcare experts, allowing patients to receive medical advice,
-            diagnoses, and treatment from the comfort of their homes.
+            <span style={{ fontWeight: "bold" }}>Virtual Care:</span>: Designed
+            to facilitate online consultations with healthcare experts, allowing
+            patients to receive medical advice, diagnoses, and treatment from
+            the comfort of their homes.
           </p>
 
-          <button>
-            <a
-              href=" https://virtual-care-telemedicine.netlify.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Live Demo
-            </a>
-          </button>
+          <Link
+            to="https://virtual-care-telemedicine.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            <button>Live Demo </button>
+          </Link>
         </div>
 
         <div className="card">
           <img src={vista} alt="" />
           <p>
-            VroomVista: Your go-to car rental platform for a seamless,
-            hassle-free experience. Explore a diverse fleet, transparent
-            policies, and competitive rates. Elevate your travel with effortless
-            vehicle booking for business or leisure.
+            <span style={{ fontWeight: "bold" }}>VroomVista:</span>
+            Car rental platform for a seamless, hassle-free experience. Explore
+            a diverse fleet, transparent policies, and competitive rates.
+            Effortless vehicle booking for business or leisure.
           </p>
 
-          <button>
-            <a
-              href=" https://margaretnannyonjo.github.io/car-renting/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Live Demo
-            </a>
-          </button>
+          <Link
+            to="https://margaretnannyonjo.github.io/car-renting/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            <button> Live Demo </button>
+          </Link>
         </div>
 
         <div className="card">
           <img src={uh} alt="" />
           <p>
-            Unity Hospital website: Your gateway to essential medical info,
-            services, and resources. Explore healthcare options, find expert
-            professionals, and discover patient-centric programs with ease.
+            <span style={{ fontWeight: "bold" }}>Unity Hospital:</span>: Your
+            gateway to essential medical info, services, and resources. Explore
+            healthcare options, find expert professionals, and discover
+            patient-centric programs with ease.
           </p>
 
-          <button>
-            <a
-              href=" https://margaretnannyonjo.github.io/hospital-landing_page/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Live Demo
-            </a>
-          </button>
+          <Link
+            to="https://margaretnannyonjo.github.io/hospital-landing_page/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            <button>Live Demo</button>
+          </Link>
         </div>
 
         <div className="card">
           <img src={linear} alt="" />
 
           <p>
-            Color Wave Explorer: Dive into creativity with this project,
-            enabling users to craft personalized gradient color combinations.
-            Explore a spectrum of hues and witness real-time background changes.
-            An intuitive tool for enhancing web designs and visual projects
+            <span style={{ fontWeight: "bold" }}>Color Wave:</span> Explore a
+            spectrum of hues and witness real-time background changes. An
+            intuitive tool for enhancing web designs and visual projects
             effortlessly.
           </p>
 
-          <button>
-            <a
-              href=" https://margaretnannyonjo.github.io/make-your_gradients/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Live Demo
-            </a>
-          </button>
+          <Link
+            to="https://margaretnannyonjo.github.io/make-your_gradients/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            <button> Live Demo </button>
+          </Link>
         </div>
       </div>
     </div>

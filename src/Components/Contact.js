@@ -5,7 +5,6 @@ import { useNavigate } from "react-router-dom";
 export const Contact = () => {
   const navigate = useNavigate();
   const {
-    register,
     handleSubmit,
     formState: { errors },
   } = useForm();
@@ -29,58 +28,51 @@ export const Contact = () => {
           method="POST"
           onSubmit={handleSubmit(onSubmit)}
         >
-          <input
-            type="text"
-            name="name"
-            placeholder="Full Name"
-            {...register("name", {
-              required: "This field is required",
-              message: "Enter Name",
-            })}
-          />
-          <p style={{ color: "red", fontSize: "small" }}>
-            {errors.name?.message}
-          </p>
+          <div className="inputs">
+            <div className="form-group">
+              <h6 style={{ textAlign: "left", marginLeft: "10px" }}>Name</h6>
+              <input
+                type="text"
+                placeholder="Enter Name"
+                className="form-control"
+              />
+            </div>
 
-          <input
-            type="text"
-            name="email"
-            placeholder="Email Address"
-            {...register("emailAddress", {
-              required: "This field is required",
-              pattern: {
-                value: /^\S+@\S+$/i,
-                message: "Invalid email address",
-              },
-            })}
-          />
-          <p style={{ color: "red", fontSize: "small" }}>
-            {errors.emailAddress?.message}
-          </p>
+            <div className="form-group">
+              <h6
+                style={{
+                  textAlign: "left",
+                  marginLeft: "10px",
+                  marginTop: "12px",
+                }}
+              >
+                Email
+              </h6>
+              <input
+                type="email"
+                placeholder="Enter Email"
+                className="form-control"
+              />
+            </div>
 
-          <input
-            type="text"
-            placeholder="Phone Number"
-            name="phoneNumber"
-            {...register("phoneNumber", {
-              required: "This field is required",
-            })}
-          />
-          <p style={{ color: "red", fontSize: "small" }}>
-            {errors.phoneNumber?.message}
-          </p>
-
-          <input
-            type="text"
-            name="message"
-            placeholder="Message"
-            {...register("message", {
-              required: "This field is required",
-            })}
-          />
-          <p style={{ color: "red", fontSize: "small" }}>
-            {errors.message?.message}
-          </p>
+            <div className="form-group">
+              <h6
+                style={{
+                  textAlign: "left",
+                  marginLeft: "10px",
+                  marginTop: "12px",
+                }}
+              >
+                Message
+              </h6>
+              <textarea
+                type="text"
+                className="form-control"
+                placeholder="message"
+                columns="50"
+              ></textarea>
+            </div>
+          </div>
 
           <button className="submit" type="submit">
             Submit

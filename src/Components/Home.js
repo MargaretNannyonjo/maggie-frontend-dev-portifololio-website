@@ -23,19 +23,20 @@ export const Home = () => {
           <img src={myimage} alt="" />
         </div>
 
-        <div className="socials">
+        <div className="socials d-flex justify-content-around flex-column">
           <a href="https://www.linkedin.com/in/margaret-nannyonjo-b150b0233/">
-            <i className="fab fa-linkedin" id="media"></i>
+            <i class="fa fa-linkedin-square" id="media" aria-hidden="true"></i>
           </a>
 
           <a href="https://twitter.com/Leaney27">
-            <i className="fa-brands fa-twitter" id="media"></i>
+            <i class="fa fa-twitter-square" id="media" aria-hidden="true"></i>
           </a>
           <a href="https://github.com/MargaretNannyonjo">
-            <i className="fa-brands fa-github" id="media"></i>
+            <i class="fa fa-github-square" id="media" aria-hidden="true"></i>
           </a>
         </div>
       </div>
+
       <About />
       <Projects />
       <Contact />
